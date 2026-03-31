@@ -1,0 +1,36 @@
+{
+  "name": "smart-investment-portal",
+  "version": "1.0.0",
+  "description": "AI-powered Smart Investment Suggestion Portal for Indian and US markets",
+  "main": "server/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"nodemon server/index.js\" \"vite\"",
+    "server": "nodemon server/index.js",
+    "client": "vite",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "investment",
+    "stock-market",
+    "ai",
+    "trading"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.8.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "node-cache": "^5.1.2",
+    "yahoo-finance2": "^3.14.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.14",
+    "vite": "^8.0.3"
+  }
+}
